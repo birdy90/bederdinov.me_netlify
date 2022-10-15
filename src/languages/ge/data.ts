@@ -1,4 +1,33 @@
-import { WordItem, WordsGroup } from "../../types";
+import { VerbRuleGroup, WordsGroup } from "../../types";
+
+export const me = { word: 'მე', translation: 'я' };
+export const youSingle = { word: 'შენ', translation: 'ты' };
+export const heSheIt = { word: 'ის', translation: 'это / он / она / оно' };
+export const we = { word: 'ჩვენ', translation: 'мы' };
+export const youPlural = { word: 'თქვენ', translation: 'вы' };
+export const they = { word: 'ისინი', translation: 'они' };
+
+export const Verbs: {
+    rules: VerbRuleGroup[],
+} = {
+    rules: [
+        {
+            id: 'V at the beginning',
+            rule: {
+                single: { first: '1', second: '2', third: '3' },
+                plural: { first: '1', second: '2', third: '3' },
+            },
+            words: [
+                { word: 'არის', translation: 'есть (I am)' },
+                { word: 'მინდა', translation: 'хочу' },
+                { word: 'მაქვს', translation: 'имею' },
+                { word: 'მიხვარს', translation: 'люблю' },
+                { word: 'ვიცი', translation: 'знаю' },
+                { word: 'ვმუშაობ', translation: 'работаю' },
+            ],
+        },
+    ],
+};
 
 export const AllWords: WordsGroup[] = [
     {
@@ -12,22 +41,26 @@ export const AllWords: WordsGroup[] = [
     {
         title: 'Местоимения',
         words: [
-            { word: 'მე', translation: 'я' },
-            { word: 'შენ', translation: 'ты' },
-            { word: 'ის', translation: 'это / он / она / оно' },
+            me,
+            youSingle,
+            heSheIt,
             { word: 'ეს', translation: 'это / он / она / оно (ближе, чем ის)' },
 
-            { word: 'ჩემი', translation: 'мой / моя / моё' },
+            we,
+            youPlural,
+            they,
+
+            { word: 'ჩემი', translation: 'мой' },
+            { word: 'შენი', translation: 'твой' },
+            { word: 'მისი', translation: 'его' },
+            { word: 'ჩვენი', translation: 'наш' },
+            { word: 'თქვენი', translation: 'ваш' },
+            { word: 'მათი', translation: 'их' },
         ]
     },
     {
         title: 'Глаголы',
-        words: [
-            { word: 'მინდა', translation: 'хочу' },
-            { word: 'მაქვს', translation: 'имею' },
-            { word: 'ვიცი', translation: 'знаю' },
-            { word: 'ვმუშაობ', translation: 'работаю' },
-        ],
+        words: Verbs.rules.flatMap((rule) => rule.words),
     },
     {
         title: 'Прилагательные',
@@ -148,14 +181,3 @@ export const AllWords: WordsGroup[] = [
         ],
     },
 ];
-
-export const Verbs: {
-    words: WordItem[],
-} = {
-    words: [
-        { word: 'მინდა', translation: 'хочу' },
-        { word: 'მაქვს', translation: 'имею' },
-        { word: 'ვიცი', translation: 'знаю' },
-        { word: 'ვმუშაობ', translation: 'работаю' },
-    ],
-};
