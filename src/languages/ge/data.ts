@@ -6,6 +6,7 @@ export const AllWords: WordsGroup[] = [
         words: [
             { word: 'ვინ', translation: 'кто?' },
             { word: 'რა', translation: 'что?' },
+            { word: 'სად', translation: 'где?' },
         ],
     },
     {
@@ -13,10 +14,20 @@ export const AllWords: WordsGroup[] = [
         words: [
             { word: 'მე', translation: 'я' },
             { word: 'შენ', translation: 'ты' },
-            { word: 'ეს', translation: 'он / она / оно' },
+            { word: 'ის', translation: 'это / он / она / оно' },
+            { word: 'ეს', translation: 'это / он / она / оно (ближе, чем ის)' },
 
             { word: 'ჩემი', translation: 'мой / моя / моё' },
         ]
+    },
+    {
+        title: 'Глаголы',
+        words: [
+            { word: 'მინდა', translation: 'хочу' },
+            { word: 'მაქვს', translation: 'имею' },
+            { word: 'ვიცი', translation: 'знаю' },
+            { word: 'ვმუშაობ', translation: 'работаю' },
+        ],
     },
     {
         title: 'Прилагательные',
@@ -36,6 +47,8 @@ export const AllWords: WordsGroup[] = [
         words: [
             { word: 'თეთრი', translation: 'белый / копейка' },
             { word: 'შავი', translation: 'черный' },
+            { word: 'ვარდისფერი', translation: 'розовый' },
+            { word: '-ფერი', translation: 'окончание для обозначения цвета' },
         ],
     },
     {
@@ -65,6 +78,12 @@ export const AllWords: WordsGroup[] = [
     {
         title: 'Семья',
         words: [
+            { word: 'მამა', translation: 'папа' },
+            { word: 'დედა', translation: 'мама' },
+            { word: 'და', translation: 'сестра' },
+            { word: 'ძმა', translation: 'брат' },
+            { word: 'ცოლი', translation: 'жена' },
+            { word: 'ძიძა', translation: 'няня' },
         ],
     },
     {
@@ -93,15 +112,10 @@ export const AllWords: WordsGroup[] = [
             { word: 'არ', translation: 'не (отрицание)' },
             { word: 'არა', translation: 'нет' },
             { word: 'კი', translation: 'да' },
+            { word: 'ხო', translation: 'да' },
+            { word: 'დიახ', translation: 'да' },
             { word: 'აი', translation: 'вот' },
             { word: 'მადლობა', translation: 'спасибо' },
-
-            { word: 'მამა', translation: 'папа' },
-            { word: 'დედა', translation: 'мама' },
-            { word: 'და', translation: 'сестра' },
-            { word: 'ძმა', translation: 'брат' },
-            { word: 'ცოლი', translation: 'жена' },
-            { word: 'ძიძა', translation: 'няня' },
 
             { word: 'ზამთარი', translation: 'зима' },
             { word: 'მთვარე', translation: 'Луна' },
@@ -140,8 +154,8 @@ export const Verbs: {
 } = {
     words: [
         { word: 'მინდა', translation: 'хочу' },
+        { word: 'მაქვს', translation: 'имею' },
         { word: 'ვიცი', translation: 'знаю' },
         { word: 'ვმუშაობ', translation: 'работаю' },
-        { word: 'მაქვს', translation: 'имею' },
     ],
 };
