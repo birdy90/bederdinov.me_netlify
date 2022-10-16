@@ -6,7 +6,8 @@ const LanguageGe = () => {
         <Tabs links={[
             { title: 'Words', link: 'words' },
             { title: 'Verbs', link: 'verbs' },
-            { title: 'Phrases', link: 'phrases' },
+            { title: 'Rules', link: 'rules' },
+            // { title: 'Phrases', link: 'phrases' },
         ]}/>
 
         <Outlet />

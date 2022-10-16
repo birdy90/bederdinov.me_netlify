@@ -6,6 +6,7 @@ import Verbs from "./languages/ge/Verbs";
 import Phrases from "./languages/ge/Phrases";
 import { MainLayout } from "./layouts/MainLayout";
 import { IndexPage } from "./pages/IndexPage";
+import Rules from "./languages/ge/Rules";
 
 export default () => {
     return (
@@ -18,6 +19,7 @@ export default () => {
                         <Route path="ge" element={<LanguageGe />}>
                             <Route path="words" element={<Words />} />
                             <Route path="verbs" element={<Verbs />} />
+                            <Route path="rules" element={<Rules />} />
                             <Route path="phrases" element={<Phrases />} />
                         </Route>
                     </Route>
