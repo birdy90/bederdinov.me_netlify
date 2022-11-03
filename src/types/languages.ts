@@ -1,5 +1,9 @@
 export interface WordsListProps {
-    words?: WordsGroup[];
+    className?: string;
+    startIndex?: number;
+    isOpened?: boolean;
+    wordsGroup: WordsGroup;
+    onToggle?: (state: boolean) => void;
 }
 
 export interface WordItem {

@@ -22,3 +22,7 @@
     @apply my-4;
   }
 }
+
+html {
+  overflow-y: scroll;
+}

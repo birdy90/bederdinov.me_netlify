@@ -1,5 +1,3 @@
-import { StartEndRule } from "./StartEndRule";
-import { WordPartsRule } from "./WordPartsRule";
 import React from "react";
 
 interface VerbRuleProps {

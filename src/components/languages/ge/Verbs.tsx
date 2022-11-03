@@ -3,28 +3,19 @@ import { WordPartsRule } from "./components/WordPartsRule";
 
 const Verbs = () => {
     return <div>
-        <h2>Verbs</h2>
-
         <h2>Глаголы на მ</h2>
         <VerbRule
-            title="მაქვს"
-            first={<WordPartsRule wordPrefix="მ" wordMiddle="აქვს" />}
-            second={<WordPartsRule wordPrefix="გ" wordMiddle="აქვს" />}
-            third={<WordPartsRule wordPrefix="_" wordMiddle="აქვს" />}
-        />
-        <VerbRule
-            title="მინდა - исключение"
+            title="მინდა"
             first={<WordPartsRule wordPrefix="მ" wordMiddle="ინდა" />}
             second={<WordPartsRule wordPrefix="გ" wordMiddle="ინდა" />}
             third={<WordPartsRule wordPrefix="უ" wordMiddle="ნდა" />}
             thirdPronoun="მას"
         />
         <VerbRule
-            title="მიხვარს - исключение"
-            first={<WordPartsRule wordPrefix="მ" wordMiddle="იხვარს" />}
-            second={<WordPartsRule wordPrefix="გ" wordMiddle="იხვარს" />}
-            third={<WordPartsRule wordPrefix="უ" wordMiddle="ხვარს" />}
-            thirdPronoun="მას"
+            title="მაქვს - исключение"
+            first={<WordPartsRule wordPrefix="მ" wordMiddle="აქვს" />}
+            second={<WordPartsRule wordPrefix="გ" wordMiddle="აქვს" />}
+            third={<WordPartsRule wordPrefix="_" wordMiddle="აქვს" />}
         />
 
         <h2>Глаголы на ვ</h2>
@@ -41,7 +32,7 @@ const Verbs = () => {
             third={<WordPartsRule wordPrefix="_" wordMiddle="არ" wordSuffix="ს" />}
             firstPlural={<WordPartsRule wordPrefix="ვ" wordMiddle="არ" wordSuffix="თ" />}
             secondPlural={<WordPartsRule wordPrefix="ხ" wordMiddle="არ" wordSuffix="თ" />}
-            thirdPlural={<WordPartsRule wordPrefix="_" wordMiddle="არ" wordSuffix="ან / ს" />}
+            thirdPlural={<WordPartsRule wordPrefix="_" wordMiddle="არ" wordSuffix="იან / ს" />}
         />
         <p>Для одушевленных используется <b>არიან</b>, а для неодушевленных <b>არის</b></p>
         <VerbRule

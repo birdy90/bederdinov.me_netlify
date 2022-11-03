@@ -1,12 +1,12 @@
 import React from "react";
 import { BrowserRouter, Route, Routes } from "react-router-dom";
-import Words from "./languages/ge/Words";
-import LanguageGe from "./languages/ge";
-import Verbs from "./languages/ge/Verbs";
-import Phrases from "./languages/ge/Phrases";
+import Words from "./components/languages/ge/Words";
+import Verbs from "./components/languages/ge/Verbs";
+import Phrases from "./components/languages/ge/Phrases";
 import { MainLayout } from "./layouts/MainLayout";
 import { IndexPage } from "./pages/IndexPage";
-import Rules from "./languages/ge/Rules";
+import Rules from "./components/languages/ge/Rules";
+import LanguageGe from "./pages/languages/ge";
 
 export default () => {
     return (

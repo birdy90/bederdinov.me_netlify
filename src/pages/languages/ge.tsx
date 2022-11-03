@@ -4,9 +4,8 @@ import Tabs from "../../components/Tabs";
 const LanguageGe = () => {
     return <>
         <Tabs links={[
-            { title: 'Words', link: 'words' },
-            { title: 'Verbs', link: 'verbs' },
-            { title: 'Rules', link: 'rules' },
+            { title: 'Слова', link: 'words' },
+            { title: 'Правила', link: 'rules' },
             // { title: 'Phrases', link: 'phrases' },
         ]}/>
 

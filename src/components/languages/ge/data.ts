@@ -1,8 +1,8 @@
-import { VerbRuleGroup, WordsGroup } from "../../types";
+import { VerbRuleGroup, WordsGroup } from "../../../types";
 
 export const me = { word: 'მე', translation: 'я' };
 export const youSingle = { word: 'შენ', translation: 'ты' };
-export const heSheIt = { word: 'ის', translation: 'это / он / она / оно' };
+export const heSheIt = { word: 'ის', translation: 'это (дальше, чем ეს) / он / она / оно' };
 export const we = { word: 'ჩვენ', translation: 'мы' };
 export const youPlural = { word: 'თქვენ', translation: 'вы' };
 export const they = { word: 'ისინი', translation: 'они' };
@@ -54,7 +54,7 @@ export const AllWords: WordsGroup[] = [
             me,
             youSingle,
             heSheIt,
-            { word: 'ეს', translation: 'это / он / она / оно (ближе, чем ის)' },
+            { word: 'ეს', translation: 'это (ближе, чем ის) / он / она / оно' },
 
             we,
             youPlural,
@@ -95,7 +95,7 @@ export const AllWords: WordsGroup[] = [
             { word: 'თეთრი', translation: 'белый / копейка' },
             { word: 'შავი', translation: 'черный' },
             { word: 'ვარდისფერი', translation: 'розовый' },
-            { word: '-ფერი', translation: 'окончание для обозначения цвета' },
+            { word: 'ფერი', translation: 'цвет' },
         ],
     },
     {
@@ -240,7 +240,7 @@ export const AllWords: WordsGroup[] = [
             { word: 'რუსეთი', translation: 'Россия' },
             { word: 'ქართველია', translation: 'грузин' },
             { word: 'ახლა', translation: 'сейчас' },
-            { word: 'მშია', translation: 'я голоден' },
+            { word: 'მშია', translation: 'голоден' },
             { word: 'ჭა', translation: 'колодец' },
             { word: 'ჭურჭელი', translation: 'посуда' },
             { word: 'სუფრა', translation: 'скатерть' },
