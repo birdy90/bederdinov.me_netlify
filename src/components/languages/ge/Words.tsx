@@ -7,7 +7,6 @@ import { Word } from "../common/Word";
 const STORAGE_ORDERING_KEY = 'words-ordering';
 
 const getFlatWords = (words: WordsGroup[]): WordItem[] => {
-
     return words.flatMap(t => {
         if (t.children) {
             return getFlatWords(t.children);
@@ -139,7 +138,7 @@ export default () => {
     })
 
     return <div>
-        <h1>Слова</h1>
+        <h1>Слова <span className="text-gray-200">({wordsFlat.length})</span></h1>
 
         <div className="flex gap-2 items-center">
             <h5>Сортировка:</h5>
