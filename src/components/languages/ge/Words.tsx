@@ -28,9 +28,9 @@ const sortWordsInGroups = (groups: WordsGroup[]) => {
 }
 
 const TranslationLine = ({ word, translation, index }: { word: string, translation: string, index: number }) => <>
-    <div key={word} className="hidden sm:block text-gray-300">{index}.</div>
-    <Word key={`${word}-word`}>{word}</Word>
-    <div key={`${word}-translation`}>{translation}</div>
+    <div key={`${word}-${translation}-${index}`} className="hidden sm:block text-gray-300">{index}.</div>
+    <Word key={`${word}-${translation}-${index}-word`}>{word}</Word>
+    <div key={`${word}-${translation}-${index}-translation`}>{translation}</div>
 </>;
 
 export default () => {
@@ -118,7 +118,8 @@ export default () => {
                                                const { word, translation } = item;
 
                                                orderingNumber += 1;
-                                               return <TranslationLine key={word} index={orderingNumber} word={word}
+                                               return <TranslationLine key={`${word}-${translation}`}
+                                                                       index={orderingNumber} word={word}
                                                                        translation={translation}/>;
                                            })}
                                        </div>,
@@ -128,7 +129,7 @@ export default () => {
                             const { word, translation } = item;
 
                             orderingNumber += 1;
-                            return <TranslationLine key={word} index={orderingNumber} word={word}
+                            return <TranslationLine key={`${word}-${translation}`} index={orderingNumber} word={word}
                                                     translation={translation}/>;
                         })
                     )}

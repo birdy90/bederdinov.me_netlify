@@ -333,7 +333,6 @@ export const AllWords: WordsGroup[] = [
                     { word: 'ქარიშხალი', translation: 'буря' },
                     { word: 'ჰაერი', translation: 'воздух' },
                     { word: 'ღამე', translation: 'ночь' },
-                    { word: 'დღე', translation: 'день' },
                     { word: 'ხე', translation: 'дерево' },
                     { word: 'ტყე', translation: 'лес' },
 
