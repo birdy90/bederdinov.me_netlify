@@ -34,36 +34,32 @@ export const NounCasesRules = () => <>
 
     <h3>Родительный</h3>
 
-    <p>
-        <Rule>
-            <Rule.Root>окончание на</Rule.Root>
-            <LettersBlock letters="აე" struckThroughLetters="აე"/>
-            <Plus/>
-            <div>
-                <Word>ის</Word>
-            </div>
-            <Arrow adaptive/>
-            <Examples>
-                <Word>ძმის</Word>
-                <Word>თვის</Word>
-            </Examples>
-        </Rule>
-    </p>
+    <Rule className="mb-2">
+        <Rule.Root>окончание на</Rule.Root>
+        <LettersBlock letters="აე" struckThroughLetters="აე"/>
+        <Plus/>
+        <div>
+            <Word>ის</Word>
+        </div>
+        <Arrow adaptive/>
+        <Examples>
+            <Word>ძმის</Word>
+            <Word>თვის</Word>
+        </Examples>
+    </Rule>
 
-    <p>
-        <Rule>
-            <Rule.Root>окончание на</Rule.Root>
-            <LettersBlock letters="იოუ"/>
-            <Plus/>
-            <div>
-                <Word>ს</Word>
-            </div>
-            <Arrow adaptive/>
-            <Examples>
-                <Word>სახლის</Word>
-                <Word>სოკოს</Word>
-                <Word>კუს</Word>
-            </Examples>
-        </Rule>
-    </p>
+    <Rule>
+        <Rule.Root>окончание на</Rule.Root>
+        <LettersBlock letters="იოუ"/>
+        <Plus/>
+        <div>
+            <Word>ს</Word>
+        </div>
+        <Arrow adaptive/>
+        <Examples>
+            <Word>სახლის</Word>
+            <Word>სოკოს</Word>
+            <Word>კუს</Word>
+        </Examples>
+    </Rule>
 </>;

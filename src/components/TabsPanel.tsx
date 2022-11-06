@@ -25,7 +25,7 @@ const sizeBasedTitleClasses = (isOpened: boolean) => ({
 export const TabsPanel = (props: TabsPanelProps) => {
     const { size = 'lg' } = props;
 
-    const [openedGroupName, setOpenedGroup] = React.useState('');
+    const [openedGroupName, setOpenedGroup] = React.useState(props.items.length > 0 ? props.items[0].key : '');
 
     const openedTab = props.items.find(t => t.key === openedGroupName)?.content;
 
@@ -38,20 +38,18 @@ export const TabsPanel = (props: TabsPanelProps) => {
         sizeBasedTitleClasses(name === openedGroupName)[size],
     ].filter(Boolean).join(' ');
 
-    return <>
-        <div>
-            <div className={`flex gap-2 flex-wrap ${sizeBasedTitleWrapperClasses[size]}`}>
-                {props.items.map((tab) => (
-                    <div className={titleClasses(tab.key)} key={tab.key}
-                         onClick={() => onToggle(tab.key)}>{tab.title}</div>
-                ))}
-            </div>
-
-            {openedTab ? (
-                <div>
-                    {openedTab}
-                </div>
-            ) : null}
+    return <div className={props.className}>
+        <div className={`flex gap-2 flex-wrap ${sizeBasedTitleWrapperClasses[size]}`}>
+            {props.items.map((tab) => (
+                <div className={titleClasses(tab.key)} key={tab.key}
+                     onClick={() => onToggle(tab.key)}>{tab.title}</div>
+            ))}
         </div>
-    </>
+
+        {openedTab ? (
+            <div>
+                {openedTab}
+            </div>
+        ) : null}
+    </div>;
 }

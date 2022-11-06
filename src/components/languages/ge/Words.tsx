@@ -2,8 +2,20 @@ import { AllWords } from './data';
 import React from "react";
 import { WordItem, WordsGroup } from "../../../types";
 import { TabsPanel } from "../../TabsPanel";
+import { Word } from "../common/Word";
 
 const STORAGE_ORDERING_KEY = 'words-ordering';
+
+const getFlatWords = (words: WordsGroup[]): WordItem[] => {
+
+    return words.flatMap(t => {
+        if (t.children) {
+            return getFlatWords(t.children);
+        }
+
+        return t.words;
+    }).filter(Boolean) as WordItem[];
+}
 
 const sortGroups = (groups: WordsGroup[]) => {
     groups.sort((a, b) => a.title > b.title ? 1 : -1);
@@ -16,11 +28,18 @@ const sortWordsInGroups = (groups: WordsGroup[]) => {
     });
 }
 
+const TranslationLine = ({ word, translation, index }: { word: string, translation: string, index: number }) => <>
+    <div key={word} className="hidden sm:block text-gray-300">{index}.</div>
+    <Word key={`${word}-word`}>{word}</Word>
+    <div key={`${word}-translation`}>{translation}</div>
+</>;
+
 export default () => {
     const [order, setOrder] = React.useState(localStorage.getItem(STORAGE_ORDERING_KEY));
+    let words: WordsGroup[];
 
-    let words = AllWords;
-    const wordsFlat = AllWords.flatMap(t => t.words).filter(Boolean) as WordItem[];
+    const wordsFlat = getFlatWords(AllWords);
+
     switch (order) {
         case 'alphaRU':
             words = wordsFlat.reduce((acc: WordsGroup[], word) => {
@@ -57,7 +76,8 @@ export default () => {
             sortGroups(words);
             sortWordsInGroups(words);
             break;
-        case 'groups':
+        default:
+            words = AllWords;
             // words.forEach(group => group.words.sort((a, b) => a.translation.toLowerCase() > b.translation.toLowerCase() ? 1 : -1));
             break;
     }
@@ -89,20 +109,30 @@ export default () => {
             key: group.title,
             content: (
                 <div className={contentClasses}>
-                    {group.words.map((item) => {
-                        if (!item) {
-                            return <div className="grid-cols-3 border-b-2"/>;
-                        }
+                    {group.children ? (
+                        <TabsPanel key={group.title} size="md" className="col-span-3"
+                                   items={group.children.map(child => ({
+                                       title: child.title,
+                                       key: child.title,
+                                       content: <div key={child.title} className={contentClasses}>
+                                           {child.words.map((item) => {
+                                               const { word, translation } = item;
 
-                        const { word, translation } = item;
+                                               orderingNumber += 1;
+                                               return <TranslationLine key={word} index={orderingNumber} word={word}
+                                                                       translation={translation}/>;
+                                           })}
+                                       </div>,
+                                   }))}/>
+                    ) : (
+                        group.words.map((item) => {
+                            const { word, translation } = item;
 
-                        orderingNumber += 1;
-                        return [
-                            <div key={word} className="hidden sm:block text-gray-300">{orderingNumber}.</div>,
-                            <div key={`${group.title}-${word}`} className="text-base sm:text-xl">{word}</div>,
-                            <div key={`${group.title}-${word}-translation`} className="sm:mb-4">{translation}</div>,
-                        ];
-                    })}
+                            orderingNumber += 1;
+                            return <TranslationLine key={word} index={orderingNumber} word={word}
+                                                    translation={translation}/>;
+                        })
+                    )}
                 </div>
             ),
         }
@@ -119,7 +149,7 @@ export default () => {
         </div>
 
         <div className="flex gap-2 flex-wrap">
-            <TabsPanel items={tabItems}/>
+            <TabsPanel key={order} items={tabItems}/>
         </div>
     </div>;
 }

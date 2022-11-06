@@ -15,7 +15,7 @@ export const LettersBlock = (props: LettersBlockProps) => {
 
     return <div className="flex items-center flex-row sm:flex-col gap-x-6 gap-y-1">
         {letters.map(t => (
-            <Word strikethrough={t.struckThough}>{t.letter}</Word>
+            <Word key={t.letter} strikethrough={t.struckThough}>{t.letter}</Word>
         ))}
     </div>
 }

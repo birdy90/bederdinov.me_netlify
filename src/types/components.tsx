@@ -7,6 +7,7 @@ export interface TabProps {
 }
 
 export interface TabsPanelProps {
+    className?: string;
     items: TabProps[];
     size?: 'sm' | 'md' | 'lg';
 }

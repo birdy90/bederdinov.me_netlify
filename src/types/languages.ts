@@ -5,7 +5,8 @@ export interface WordItem {
 
 export interface WordsGroup {
     title: string;
-    words: (WordItem | null)[];
+    words: WordItem[];
+    children?: WordsGroup[];
 }
 
 export interface VerbRule {
