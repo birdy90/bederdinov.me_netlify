@@ -1,11 +1,3 @@
-export interface WordsListProps {
-    className?: string;
-    startIndex?: number;
-    isOpened?: boolean;
-    wordsGroup: WordsGroup;
-    onToggle?: (state: boolean) => void;
-}
-
 export interface WordItem {
     word: string;
     translation: string;
@@ -13,7 +5,7 @@ export interface WordItem {
 
 export interface WordsGroup {
     title: string;
-    words: WordItem[];
+    words: (WordItem | null)[];
 }
 
 export interface VerbRule {

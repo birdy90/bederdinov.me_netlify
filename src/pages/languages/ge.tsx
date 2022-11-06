@@ -1,16 +1,13 @@
 import { Outlet } from "react-router-dom";
-import Tabs from "../../components/Tabs";
+import { NavTabsMenu } from "../../components/NavTabsMenu";
 
-const LanguageGe = () => {
+export const LanguageGe = () => {
     return <>
-        <Tabs links={[
+        <NavTabsMenu links={[
             { title: 'Слова', link: 'words' },
             { title: 'Правила', link: 'rules' },
-            // { title: 'Phrases', link: 'phrases' },
         ]}/>
 
-        <Outlet />
+        <Outlet/>
     </>;
 }
-
-export default LanguageGe;

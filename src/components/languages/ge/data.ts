@@ -1,4 +1,4 @@
-import { VerbRuleGroup, WordsGroup } from "../../../types";
+import { WordsGroup } from "../../../types";
 
 export const me = { word: 'მე', translation: 'я' };
 export const youSingle = { word: 'შენ', translation: 'ты' };
@@ -6,35 +6,6 @@ export const heSheIt = { word: 'ის', translation: 'это (дальше, ч�
 export const we = { word: 'ჩვენ', translation: 'мы' };
 export const youPlural = { word: 'თქვენ', translation: 'вы' };
 export const they = { word: 'ისინი', translation: 'они' };
-
-export const Verbs: {
-    rules: VerbRuleGroup[],
-} = {
-    rules: [
-        {
-            id: 'V at the beginning',
-            rule: {
-                single: { first: '1', second: '2', third: '3' },
-                plural: { first: '1', second: '2', third: '3' },
-            },
-            words: [
-                { word: 'არის', translation: 'есть (I am)' },
-                { word: 'მინდა', translation: 'хочу' },
-                { word: 'მაქვს', translation: 'имею' },
-                { word: 'მიხვარს', translation: 'люблю' },
-                { word: 'ვიცი', translation: 'знаю' },
-                { word: 'ვმუშაობ', translation: 'работаю' },
-                { word: 'ვცხოვრობ', translation: 'живу' },
-                { word: 'ვსცავლობ', translation: 'учу (изучаю)' },
-                { word: 'მოვდივარ', translation: 'иду (к тебе)' },
-                { word: 'მივდივარ', translation: 'иду (от тебя)' },
-                { word: 'ვსაუზმობ', translation: 'завтракаю' },
-                { word: 'ვსადილობ', translation: 'обедаю' },
-                { word: 'ვვახშმობ', translation: 'ужинаю' },
-            ],
-        },
-    ],
-};
 
 export const AllWords: WordsGroup[] = [
     {
@@ -70,7 +41,21 @@ export const AllWords: WordsGroup[] = [
     },
     {
         title: 'Глаголы',
-        words: Verbs.rules.flatMap((rule) => rule.words),
+        words: [
+            { word: 'არის', translation: 'есть (I am)' },
+            { word: 'მინდა', translation: 'хочу' },
+            { word: 'მაქვს', translation: 'имею' },
+            { word: 'მიხვარს', translation: 'люблю' },
+            { word: 'ვიცი', translation: 'знаю' },
+            { word: 'ვმუშაობ', translation: 'работаю' },
+            { word: 'ვცხოვრობ', translation: 'живу' },
+            { word: 'ვსცავლობ', translation: 'учу (изучаю)' },
+            { word: 'მოვდივარ', translation: 'иду (к тебе)' },
+            { word: 'მივდივარ', translation: 'иду (от тебя)' },
+            { word: 'ვსაუზმობ', translation: 'завтракаю' },
+            { word: 'ვსადილობ', translation: 'обедаю' },
+            { word: 'ვვახშმობ', translation: 'ужинаю' },
+        ],
     },
     {
         title: 'Прилагательные',
@@ -92,8 +77,15 @@ export const AllWords: WordsGroup[] = [
     {
         title: 'Цвета',
         words: [
-            { word: 'თეთრი', translation: 'белый / копейка' },
+            { word: 'თეთრი', translation: 'белый' },
             { word: 'შავი', translation: 'черный' },
+            null,
+            { word: 'რუხი', translation: 'серый' },
+            { word: 'ლურGჯი', translation: 'синий' },
+            { word: 'მწვანე', translation: 'зеленый' },
+            { word: 'ყვითელი', translation: 'желтый' },
+            { word: 'წითელი', translation: 'красный' },
+            null,
             { word: 'ვარდისფერი', translation: 'розовый' },
             { word: 'ფერი', translation: 'цвет' },
         ],
@@ -110,6 +102,7 @@ export const AllWords: WordsGroup[] = [
             { word: 'ხახვი', translation: 'лук' },
             { word: 'სიმინდი', translation: 'кукуруза' },
             { word: 'სოკო', translation: 'гриб' },
+            { word: 'ძორცი', translation: 'мясо' },
 
             { word: 'პური', translation: 'хлеб / пекарня' },
             { word: 'ორცხობილი', translation: 'печенье' },
@@ -147,29 +140,13 @@ export const AllWords: WordsGroup[] = [
             { word: 'ძმა', translation: 'брат' },
             { word: 'შვილი', translation: 'ребенок' },
             { word: 'ქალიშვილი', translation: 'дочь' },
-            { word: 'ვაჟიიშვილი', translation: 'дочь' },
+            { word: 'ვაჟიიშვილი', translation: 'сын' },
             { word: 'ცოლი', translation: 'жена' },
             { word: 'ძიძა', translation: 'няня' },
             { word: 'გოგო', translation: 'девушка' },
             { word: 'გოგონა', translation: 'девочка' },
             { word: 'ბიჭი', translation: 'мальчик' },
             { word: 'მეგობარი', translation: 'друг' },
-        ],
-    },
-    {
-        title: 'Числительные',
-        words: [
-            { word: 'ერთი', translation: 'один' },
-            { word: 'ორი', translation: 'два' },
-            { word: 'სამი', translation: 'три' },
-            { word: 'ოთხი', translation: 'четыре' },
-            { word: 'ხუთი', translation: 'пять' },
-            { word: 'ეკვსი', translation: 'шесть' },
-            { word: 'შვიდი', translation: 'семь' },
-            { word: 'რვა', translation: 'восемь' },
-            { word: 'ცხრა', translation: 'девять' },
-            { word: 'ათი', translation: 'десять' },
-            { word: 'ნახევარი', translation: 'половина' },
         ],
     },
     {
@@ -198,6 +175,13 @@ export const AllWords: WordsGroup[] = [
             { word: 'თოლია', translation: 'чайка' },
             { word: 'მერხალი', translation: 'ласточка' },
         ]
+    },
+    {
+        title: 'Одежда',
+        words: [
+            { word: 'წინდა', translation: 'носок' },
+            { word: 'ჩექმა', translation: 'сапог' },
+        ],
     },
     {
         title: 'Прочее',
@@ -250,15 +234,12 @@ export const AllWords: WordsGroup[] = [
             { word: 'ყოჩაღ', translation: 'молодец' },
             { word: 'თავისუფლება', translation: 'свобода' },
             { word: 'სახლი', translation: 'дом' },
-            { word: 'ძორცი', translation: 'мясо' },
 
             { word: 'ჰოკეი', translation: 'хоккей' },
             { word: 'ქოლგა', translation: 'зонтик' },
             { word: 'ნავი', translation: 'лодка' },
             { word: 'ხმარი', translation: 'меч' },
             { word: 'ზარი', translation: 'колокол / звонок' },
-            { word: 'წინდა', translation: 'носок' },
-            { word: 'ჩექმა', translation: 'сапог' },
             { word: 'მერხი', translation: 'доска' },
             { word: 'ჭიქა', translation: 'стакан' },
             { word: 'ჯაჭვი', translation: 'цепь' },
@@ -271,6 +252,7 @@ export const AllWords: WordsGroup[] = [
             { word: 'ლუდი', translation: 'пиво' },
             { word: 'ფასდაკლები', translation: 'скидка' },
             { word: 'ნაგავი', translation: 'мусор' },
+            { word: 'თეთრი', translation: 'копейка' },
 
             { word: 'სამოთხე', translation: 'рай' },
             { word: 'ჯოჯოხეთი', translation: 'ад' },
