@@ -8,14 +8,14 @@ export const PronounsRules = () => {
 
         <Rule className="gap-x-24">
             <Examples>
-                <Word>მე - я</Word>
-                <Word>შენ - ты</Word>
-                <Word>ის/ეს - он / она / оно</Word>
+                <div><Word>მე</Word> - я</div>
+                <div><Word>შენ</Word> - ты</div>
+                <div><Word>ის/ეს</Word> - он / она / оно</div>
             </Examples>
             <Examples>
-                <Word>ჩვენ - мы</Word>
-                <Word>თქვენ - вы</Word>
-                <Word>ისინი - они</Word>
+                <div><Word>ჩვენ</Word> - мы</div>
+                <div><Word>თქვენ</Word> - вы</div>
+                <div><Word>ისინი</Word> - они</div>
             </Examples>
         </Rule>
 
@@ -23,14 +23,14 @@ export const PronounsRules = () => {
 
         <Rule className="gap-x-24">
             <Examples>
-                <Word>ჩემი - мой</Word>
-                <Word>შენი - твой</Word>
-                <Word>მისი - его</Word>
+                <div><Word>ჩემი</Word> - мой</div>
+                <div><Word>შენი</Word> - твой</div>
+                <div><Word>მისი</Word> - его</div>
             </Examples>
             <Examples>
-                <Word>ჩვენი - наш</Word>
-                <Word>თქვენი - ваш</Word>
-                <Word>ისინი - их</Word>
+                <div><Word>ჩვენი</Word> - наш</div>
+                <div><Word>თქვენი</Word> - ваш</div>
+                <div><Word>ისინი</Word> - их</div>
             </Examples>
         </Rule>
     </>;
