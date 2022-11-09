@@ -34,7 +34,7 @@ const TranslationLine = ({ word, translation, index }: { word: string, translati
 </>;
 
 export default () => {
-    const [order, setOrder] = React.useState(localStorage.getItem(STORAGE_ORDERING_KEY));
+    const [order, setOrder] = React.useState(localStorage.getItem(STORAGE_ORDERING_KEY) || 'groups');
     let words: WordsGroup[];
 
     const wordsFlat = getFlatWords(AllWords);
