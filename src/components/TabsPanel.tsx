@@ -33,13 +33,24 @@ export const TabsPanel = (props: TabsPanelProps) => {
         setOpenedGroup(key === openedGroupName ? '' : key);
     };
 
+    const containerClasses = [
+        'w-full',
+        props.className,
+    ].filter(Boolean).join(' ');
+
+    const tabsClasses = [
+        'flex gap-2 flex-wrap',
+        sizeBasedTitleWrapperClasses[size],
+        props.tabsClassName,
+    ].filter(Boolean).join(' ');
+
     const titleClasses = (name: string) => [
-        'transition-colors cursor-pointer rounded-lg',
+        'flex transition-colors cursor-pointer rounded-lg items-center justify-center',
         sizeBasedTitleClasses(name === openedGroupName)[size],
     ].filter(Boolean).join(' ');
 
-    return <div className={props.className}>
-        <div className={`flex gap-2 flex-wrap ${sizeBasedTitleWrapperClasses[size]}`}>
+    return <div className={containerClasses}>
+        <div className={tabsClasses}>
             {props.items.map((tab) => (
                 <div className={titleClasses(tab.key)} key={tab.key}
                      onClick={() => onToggle(tab.key)}>{tab.title}</div>

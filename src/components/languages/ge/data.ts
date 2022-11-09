@@ -1,4 +1,4 @@
-import { WordsGroup } from "../../../types";
+import { WordsGroup } from '../../../types';
 
 export const me = { word: 'მე', translation: 'я' };
 export const youSingle = { word: 'შენ', translation: 'ты' };
@@ -16,7 +16,8 @@ export const AllWords: WordsGroup[] = [
             { word: 'სად', translation: 'где? / куда?' },
             { word: 'როგორ', translation: 'как?' },
             { word: 'რამდინე', translation: 'сколько?' },
-            { word: 'რომელი', translation: 'какой?' },
+            { word: 'რომელი', translation: 'какой? (which?)' },
+            { word: 'როგორი', translation: 'какой? (о характеристиках)' },
         ],
     },
     {
@@ -55,9 +56,16 @@ export const AllWords: WordsGroup[] = [
             { word: 'ვსცავლობ', translation: 'учу (изучаю)' },
             { word: 'მოვდივარ', translation: 'иду (к тебе)' },
             { word: 'მივდივარ', translation: 'иду (от тебя)' },
+
+            { word: 'ვჭამ', translation: 'ем' },
             { word: 'ვსაუზმობ', translation: 'завтракаю' },
             { word: 'ვსადილობ', translation: 'обедаю' },
             { word: 'ვვახშმობ', translation: 'ужинаю' },
+
+            { word: 'იარეთ', translation: 'возьмите (вежливо)' },
+            { word: 'ინებეთ', translation: 'возьмите (очень вежливо)' },
+            { word: 'მომეცი(თ)', translation: 'дай(те)' },
+            { word: 'მითხირე(თ)', translation: 'скажи(те)' },
         ],
     },
     {
@@ -77,18 +85,27 @@ export const AllWords: WordsGroup[] = [
 
             { word: 'ცივი', translation: 'холодный' },
             { word: 'თბილი', translation: 'теплый' },
-
             { word: 'ცხელი', translation: 'горячий' },
+
             { word: 'ლამაზი', translation: 'красивый' },
             { word: 'ნათელი', translation: 'яркий' },
             { word: 'კეთილი', translation: 'добрый' },
             { word: 'კარგი', translation: 'хороший' },
+            { word: 'საყვარელი', translation: 'милый / любимый / любовник' },
+
+            { word: 'მდიდარი', translation: 'богатый' },
+            { word: 'ღარიბი', translation: 'бедный' },
 
             { word: 'გემრიელი', translation: 'вкусный' },
             { word: 'თკბილი', translation: 'сладкий' },
 
             { word: 'ძველი', translation: 'старый' },
             { word: 'ახალი', translation: 'новый / свежий' },
+
+            { word: 'ძვირფასი', translation: 'дорогой' },
+            { word: 'მარილიანი', translation: 'солёный' },
+            { word: 'უმარილი', translation: 'не солёный' },
+            { word: 'მჟივე', translation: 'кислый / маринованный' },
         ],
     },
     {
@@ -98,7 +115,7 @@ export const AllWords: WordsGroup[] = [
             { word: 'შავი', translation: 'черный' },
 
             { word: 'რუხი', translation: 'серый' },
-            { word: 'ლურGჯი', translation: 'синий' },
+            { word: 'ლურჯი', translation: 'синий' },
             { word: 'მწვანე', translation: 'зеленый' },
             { word: 'ყვითელი', translation: 'желтый' },
             { word: 'წითელი', translation: 'красный' },
@@ -119,16 +136,24 @@ export const AllWords: WordsGroup[] = [
                     { word: 'ჟოლო', translation: 'малина' },
                     { word: 'ლეღვი', translation: 'инжир' },
                     { word: 'კომში', translation: 'айва' },
+                    { word: 'ყურძელი', translation: 'виноград' },
+                    { word: 'ატამი', translation: 'персик' },
+                    { word: 'მსხალი', translation: 'груша' },
+                    { word: 'ვაშლი', translation: 'яблоко' },
+                    { word: 'ფორთოხალი', translation: 'апельсин' },
                 ],
             },
             {
                 title: 'Овощи',
                 words: [
+                    { word: 'სტაფილო', translation: 'морковь' },
+                    { word: 'კიტრი', translation: 'огурец' },
                     { word: 'ნიორი', translation: 'чеснок' },
                     { word: 'ხახვი', translation: 'лук' },
                     { word: 'სიმინდი', translation: 'кукуруза' },
                     { word: 'სოკო', translation: 'гриб' },
-
+                    { word: 'კომბოსტო', translation: 'капуста' },
+                    { word: 'ყვავილოვანი კომბოსტო', translation: 'цветная капуста' },
                 ],
             },
             {
@@ -151,7 +176,9 @@ export const AllWords: WordsGroup[] = [
                     { word: 'ტორტი', translation: 'торт' },
                     { word: 'ხორცი', translation: 'мясо' },
                     { word: 'ქველი', translation: 'сыр' },
+                    { word: 'კარაქი', translation: 'масло' },
                     { word: 'ხაჭო', translation: 'творог' },
+                    { word: 'კვერცხი', translation: 'яйцо' },
                     { word: 'ხაჭაპური', translation: 'хачапури' },
 
                     { word: 'ფაფა', translation: 'каша' },
@@ -172,14 +199,18 @@ export const AllWords: WordsGroup[] = [
             {
                 title: 'Семья',
                 words: [
+                    { word: 'ნათესავი', translation: 'родственник' },
                     { word: 'ოჯახი', translation: 'семья' },
+                    { word: 'მწობლები', translation: 'родители' },
                     { word: 'მამა', translation: 'папа' },
                     { word: 'დედა', translation: 'мама' },
-                    { word: 'და', translation: 'сестра' },
-                    { word: 'ძმა', translation: 'брат' },
+                    { word: 'ბებია', translation: 'бабушка' },
+                    { word: 'პაპა', translation: 'дедушка' },
                     { word: 'შვილი', translation: 'ребенок' },
                     { word: 'ქალიშვილი', translation: 'дочь' },
                     { word: 'ვაჟიიშვილი', translation: 'сын' },
+                    { word: 'და', translation: 'сестра' },
+                    { word: 'ძმა', translation: 'брат' },
                 ],
             },
             {
@@ -245,8 +276,10 @@ export const AllWords: WordsGroup[] = [
                     { word: 'ლეკვი', translation: 'щенок' },
                     { word: 'ძროხა', translation: 'корова' },
                     { word: 'ღორი', translation: 'свинья' },
+                    { word: 'ქათამი', translation: 'курица' },
                     { word: 'მამალი', translation: 'петух' },
                     { word: 'ვირი', translation: 'осёл' },
+                    { word: 'კურდღელი', translation: 'кролик' },
                 ],
             },
             {
@@ -304,7 +337,9 @@ export const AllWords: WordsGroup[] = [
                     { word: 'დიახ', translation: 'да' },
                     { word: 'აი', translation: 'вот' },
                     { word: 'თუ', translation: 'если' },
+                    { word: 'მაგრამ', translation: 'но' },
                     { word: 'იმიტომ რომ', translation: 'потому что' },
+                    { word: 'იყოს', translation: 'пусть будет / и так пойдёт' },
                     { word: 'მადლობა', translation: 'спасибо' },
                     { word: 'იქ', translation: 'там' },
                     { word: 'აქ', translation: 'тут / здесь' },
@@ -373,10 +408,11 @@ export const AllWords: WordsGroup[] = [
                     { word: 'ჰოკეი', translation: 'хоккей' },
                     { word: 'ქოლგა', translation: 'зонтик' },
                     { word: 'ნავი', translation: 'лодка' },
+                    { word: 'თვითმფრინავი', translation: 'самолёт' },
                     { word: 'ხმარი', translation: 'меч' },
                     { word: 'ზარი', translation: 'колокол / звонок' },
                     { word: 'მერხი', translation: 'доска' },
-                    { word: 'ჭიქა', translation: 'стакан' },
+                    { word: 'ჭიქა', translation: 'стакан / чашка' },
                     { word: 'ჯაჭვი', translation: 'цепь' },
                     { word: 'ანბანი', translation: 'алфавит' },
                     { word: 'ურემი', translation: 'тележка' },
@@ -391,11 +427,17 @@ export const AllWords: WordsGroup[] = [
                     { word: 'ქუჩა', translation: 'улица' },
                     { word: 'ქალაქი', translation: 'город' },
                     { word: 'დედაქალაქი', translation: 'столица' },
+                    { word: 'ბინა', translation: 'квартира' },
 
                     { word: 'შორს', translation: 'далеко' },
                     { word: 'ახლოს', translation: 'близко' },
                     { word: 'შიგნით', translation: 'внутри' },
                     { word: 'გარეთ', translation: 'снаружи' },
+                    { word: 'ძვირი', translation: 'дорого' },
+                    { word: 'იაფი', translation: 'дешёво' },
+
+                    { word: 'ცალი', translation: 'штука' },
+                    { word: 'ხურდი', translation: 'сдача / мелочь' },
                 ],
             },
         ]

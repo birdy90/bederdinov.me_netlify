@@ -4,6 +4,7 @@ import { VerbsRules } from "./verbs";
 import { PrepositionRules } from "./prepositions";
 import { NumericRules } from "./numerics";
 import { NounRules } from "./nouns";
+import { PronounsRules } from "./pronouns";
 
 export const Rules = () => {
     const tabItems: TabProps[] = [
@@ -21,6 +22,11 @@ export const Rules = () => {
             title: 'Предлоги',
             key: 'prepositions',
             content: <PrepositionRules/>,
+        },
+        {
+            title: 'Местоимения',
+            key: 'pronouns',
+            content: <PronounsRules/>,
         },
         {
             title: 'Числительные',

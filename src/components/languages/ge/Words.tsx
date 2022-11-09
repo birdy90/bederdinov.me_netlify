@@ -149,7 +149,9 @@ export default () => {
         </div>
 
         <div className="flex gap-2 flex-wrap">
-            <TabsPanel key={order} items={tabItems}/>
+            <TabsPanel tabsClassName={order !== 'groups' ? 'grid grid-cols-[repeat(auto-fill,minmax(40px,1fr))]' : ''}
+                       key={order}
+                       items={tabItems}/>
         </div>
     </div>;
 }

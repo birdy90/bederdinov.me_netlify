@@ -19,7 +19,7 @@ export const PluralRules = () => <>
         <Arrow adaptive/>
         <Examples>
             <Word>კუ<Word highlighted>ებ</Word>ი</Word>
-            <Word>სოქო<Word highlighted>ებ</Word>ი</Word>
+            <Word>სოკო<Word highlighted>ებ</Word>ი</Word>
             <Word>სახლ<Word highlighted>ებ</Word>ი</Word>
             <Word>ძმ<Word highlighted>ებ</Word>ი</Word>
         </Examples>
