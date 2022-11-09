@@ -11,7 +11,9 @@ export const Rule = (props: PropsWithChildren<{ className?: string }>) => {
     ].filter(Boolean).join(' ');
 
     return <div
-        className={classes}>
+        className={classes}
+        style={{ wordSpacing: '4px' }}
+    >
         {props.children}
     </div>
 }

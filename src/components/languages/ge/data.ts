@@ -61,6 +61,7 @@ export const AllWords: WordsGroup[] = [
             { word: 'ვსაუზმობ', translation: 'завтракаю' },
             { word: 'ვსადილობ', translation: 'обедаю' },
             { word: 'ვვახშმობ', translation: 'ужинаю' },
+            { word: 'მქვია', translation: 'меня зовут' },
 
             { word: 'იარეთ', translation: 'возьмите (вежливо)' },
             { word: 'ინებეთ', translation: 'возьмите (очень вежливо)' },

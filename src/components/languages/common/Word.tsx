@@ -8,7 +8,6 @@ export const Word = ({ children, strikethrough, highlighted }: React.PropsWithCh
         'relative text-lg sm:text-xl',
         strikethrough && 'text-gray-800',
         highlighted && 'bg-blue-100 rounded-md border border-blue-200 px-0.5 mx-0.5',
-        // highlighted && 'outline outline-red-400 outline-dotted outline-2 mx-1',
     ].filter(Boolean).join(' ');
 
     return <span className={classNames}>
