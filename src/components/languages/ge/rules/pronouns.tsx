@@ -30,7 +30,7 @@ export const PronounsRules = () => {
             <Examples>
                 <div><Word>ჩვენი</Word> - наш</div>
                 <div><Word>თქვენი</Word> - ваш</div>
-                <div><Word>ისინი</Word> - их</div>
+                <div><Word>მათი</Word> - их</div>
             </Examples>
         </Rule>
     </>;
