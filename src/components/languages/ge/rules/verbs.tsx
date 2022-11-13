@@ -6,39 +6,39 @@ import { Examples } from "../../common/Examples";
 export const VerbsRules = () => <>
     <h3>Глаголы на მ</h3>
 
-    <div className="grid sm:grid-cols-2 sm:grid-rows-3 sm:grid-flow-col gap-2 mb-2">
-        <Rule className="!flex-row">
+    <Rule className="grid sm:grid-cols-2 sm:grid-rows-3 sm:grid-flow-col !gap-0 p-x-0 mb-2">
+        <Rule className="!flex-row border-0">
             <Word>მე</Word>
             <Plus/>
             <div><Word highlighted>მ</Word> - основа</div>
         </Rule>
-        <Rule className="!flex-row">
+        <Rule className="!flex-row border-0">
             <Word>შენ</Word>
             <Plus/>
             <div><Word highlighted>გ</Word> - основа</div>
         </Rule>
-        <Rule className="!flex-row">
+        <Rule className="!flex-row border-0">
             <Word highlighted>მას</Word>
             <Plus/>
             <div><Word highlighted>ჰ/უ/ს/_</Word> - основа</div>
         </Rule>
 
-        <Rule className="!flex-row">
+        <Rule className="!flex-row border-0">
             <Word>ჩვენ</Word>
             <Plus/>
             <div><Word highlighted>მვ</Word> - основа</div>
         </Rule>
-        <Rule className="!flex-row">
+        <Rule className="!flex-row border-0">
             <Word>თქვენ</Word>
             <Plus/>
             <div><Word highlighted>გ</Word> - основа - <Word highlighted>თ</Word></div>
         </Rule>
-        <Rule className="!flex-row">
-            <Word>მათ</Word>
+        <Rule className="!flex-row border-0">
+            <Word highlighted>მათ</Word>
             <Plus/>
             <div><Word highlighted>? (3)</Word> - основа - <Word highlighted>თ</Word></div>
         </Rule>
-    </div>
+    </Rule>
 
     <p>
         Если слово оканчивается на <Word>შ</Word>, то во втором и третьем лице во множественно числе оно будет отброшено
@@ -62,39 +62,39 @@ export const VerbsRules = () => <>
 
     <h3>Глаголы на ვ</h3>
 
-    <div className="grid sm:grid-cols-2 sm:grid-rows-3 sm:grid-flow-col gap-2 mb-2">
-        <Rule className="!flex-row">
+    <Rule className="grid sm:grid-cols-2 sm:grid-rows-3 sm:grid-flow-col !gap-0 p-x-0 mb-2">
+        <Rule className="!flex-row border-0">
             <Word>მე</Word>
             <Plus/>
             <div><Word highlighted>ვ</Word> - основа</div>
         </Rule>
-        <Rule className="!flex-row">
+        <Rule className="!flex-row border-0">
             <Word>შენ</Word>
             <Plus/>
             <div><Word strikethrough>ვ</Word> - основа</div>
         </Rule>
-        <Rule className="!flex-row">
+        <Rule className="!flex-row border-0">
             <Word highlighted>მას</Word>
             <Plus/>
             <div><Word strikethrough>ვ</Word> - основа - <Word highlighted>ს</Word></div>
         </Rule>
 
-        <Rule className="!flex-row">
+        <Rule className="!flex-row border-0">
             <Word>ჩვენ</Word>
             <Plus/>
             <div><Word highlighted>ვ</Word> - основа - <Word highlighted>თ</Word></div>
         </Rule>
-        <Rule className="!flex-row">
+        <Rule className="!flex-row border-0">
             <Word>თქვენ</Word>
             <Plus/>
             <div><Word strikethrough>ვ</Word> - основа - <Word highlighted>თ</Word></div>
         </Rule>
-        <Rule className="!flex-row">
-            <Word>მათ</Word>
+        <Rule className="!flex-row border-0">
+            <Word highlighted>მათ</Word>
             <Plus/>
             <div><Word strikethrough>ვ</Word> - основа - <Word highlighted>ენ</Word></div>
         </Rule>
-    </div>
+    </Rule>
 
     <Rule>
         <Examples>
