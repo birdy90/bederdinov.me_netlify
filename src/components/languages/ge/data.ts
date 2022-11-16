@@ -39,6 +39,13 @@ export const AllWords: WordsGroup[] = [
             { word: 'თქვენი', translation: 'ваш' },
             { word: 'მათი', translation: 'их' },
 
+            { word: 'ჩემით', translation: 'мной' },
+            { word: 'შენით', translation: 'тобой' },
+            { word: 'მისით', translation: 'им (кем) / ей (кем)' },
+            { word: 'ჩვენით', translation: 'нами' },
+            { word: 'თქვენით', translation: 'вами' },
+            { word: 'მითით', translation: 'ими' },
+
             { word: 'რამე', translation: 'что-то' },
             { word: 'ვინრე', translation: 'кто-то' },
         ]
@@ -62,6 +69,8 @@ export const AllWords: WordsGroup[] = [
             { word: 'ვსადილობ', translation: 'обедаю' },
             { word: 'ვვახშმობ', translation: 'ужинаю' },
             { word: 'მქვია', translation: 'меня зовут' },
+
+            { word: 'ვამაყობ', translation: 'горжусь' },
 
             { word: 'იარეთ', translation: 'возьмите (вежливо)' },
             { word: 'ინებეთ', translation: 'возьмите (очень вежливо)' },
@@ -92,6 +101,7 @@ export const AllWords: WordsGroup[] = [
             { word: 'ნათელი', translation: 'яркий' },
             { word: 'კეთილი', translation: 'добрый' },
             { word: 'კარგი', translation: 'хороший' },
+            { word: 'ცუთი', translation: 'плохой' },
             { word: 'საყვარელი', translation: 'милый / любимый / любовник' },
 
             { word: 'მდიდარი', translation: 'богатый' },
@@ -189,6 +199,7 @@ export const AllWords: WordsGroup[] = [
                     { word: 'საუზმე', translation: 'завтрак' },
                     { word: 'სადილი', translation: 'обед' },
                     { word: 'ვახშამი', translation: 'ужин' },
+                    { word: 'წვნიანი', translation: 'подливка / похлебка' },
                 ],
             },
         ],
@@ -202,6 +213,7 @@ export const AllWords: WordsGroup[] = [
                 words: [
                     { word: 'ნათესავი', translation: 'родственник' },
                     { word: 'ოჯახი', translation: 'семья' },
+                    { word: 'მეუღლე', translation: 'супруг' },
                     { word: 'მწობლები', translation: 'родители' },
                     { word: 'მამა', translation: 'папа' },
                     { word: 'დედა', translation: 'мама' },
@@ -276,6 +288,7 @@ export const AllWords: WordsGroup[] = [
                     { word: 'ძაღლი', translation: 'собака' },
                     { word: 'ლეკვი', translation: 'щенок' },
                     { word: 'ძროხა', translation: 'корова' },
+                    { word: 'ცხელი', translation: 'лошадь' },
                     { word: 'ღორი', translation: 'свинья' },
                     { word: 'ქათამი', translation: 'курица' },
                     { word: 'მამალი', translation: 'петух' },
@@ -358,6 +371,9 @@ export const AllWords: WordsGroup[] = [
                     { word: 'წამი', translation: 'секунда' },
 
                     { word: 'დღეს', translation: 'сегодня' },
+                    { word: 'გუშინ', translation: 'вчера' },
+                    { word: 'ხვალ', translation: 'завтра' },
+                    { word: 'ზეგ', translation: 'послезавтра' },
                     { word: 'ახლა', translation: 'сейчас' },
                 ],
             },
@@ -371,6 +387,7 @@ export const AllWords: WordsGroup[] = [
                     { word: 'ღამე', translation: 'ночь' },
                     { word: 'ხე', translation: 'дерево' },
                     { word: 'ტყე', translation: 'лес' },
+                    { word: 'ამინდი', translation: 'погода' },
 
                     { word: 'მძე', translation: 'Солнце' },
                     { word: 'მთვარე', translation: 'Луна' },
@@ -382,7 +399,6 @@ export const AllWords: WordsGroup[] = [
             {
                 title: 'Остальное',
                 words: [
-
                     { word: 'ვარდი', translation: 'роза' },
                     { word: 'ია', translation: 'фиалка' },
 
@@ -428,6 +444,7 @@ export const AllWords: WordsGroup[] = [
                     { word: 'ქუჩა', translation: 'улица' },
                     { word: 'ქალაქი', translation: 'город' },
                     { word: 'დედაქალაქი', translation: 'столица' },
+                    { word: 'უღელი', translation: 'упряжка' },
                     { word: 'ბინა', translation: 'квартира' },
 
                     { word: 'შორს', translation: 'далеко' },
@@ -439,6 +456,7 @@ export const AllWords: WordsGroup[] = [
 
                     { word: 'ცალი', translation: 'штука' },
                     { word: 'ხურდი', translation: 'сдача / мелочь' },
+                    { word: 'წერილი', translation: 'письмо' },
                 ],
             },
         ]
