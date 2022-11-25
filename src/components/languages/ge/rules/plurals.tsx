@@ -2,7 +2,6 @@ import { Rule } from "../../common/Rule";
 import { Vowels } from "../../common/Vowels";
 import { Plus } from "../../common/Plus";
 import { Word } from "../../common/Word";
-import { Arrow } from "../../common/Arrow";
 import { Examples } from "../../common/Examples";
 
 export const PluralRules = () => <>
@@ -10,20 +9,19 @@ export const PluralRules = () => <>
         про именительный падеж)</p>
 
     <Rule>
-        <Rule.Root>окончание на</Rule.Root>
+        <Rule.Text>окончание на</Rule.Text>
         <Vowels struckThroughLetters="ია"/>
         <Plus/>
         <Word>ებ</Word>
         <Plus/>
         <Word>ი</Word>
-        <Arrow adaptive/>
-        <Examples>
-            <Word>კუ<Word highlighted>ებ</Word>ი</Word>
-            <Word>სოკო<Word highlighted>ებ</Word>ი</Word>
-            <Word>სახლ<Word highlighted>ებ</Word>ი</Word>
-            <Word>ძმ<Word highlighted>ებ</Word>ი</Word>
-        </Examples>
     </Rule>
+    <Examples>
+        <Word>კუ<Word highlighted>ებ</Word>ი</Word>
+        <Word>სოკო<Word highlighted>ებ</Word>ი</Word>
+        <Word>სახლ<Word highlighted>ებ</Word>ი</Word>
+        <Word>ძმ<Word highlighted>ებ</Word>ი</Word>
+    </Examples>
 
     <h3>P.S.</h3>
     <p>Не все существительные могут быть во множественном числе. Как в русском языке, когда слово не имеет

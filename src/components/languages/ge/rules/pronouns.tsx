@@ -1,4 +1,3 @@
-import { Rule } from "../../common/Rule";
 import { Examples } from "../../common/Examples";
 import { Word } from "../../common/Word";
 
@@ -6,32 +5,32 @@ export const PronounsRules = () => {
     return <>
         <h3>Личные</h3>
 
-        <Rule className="gap-x-24">
-            <Examples>
+        <Examples className="flex-col sm:flex-row gap-x-24">
+            <div>
                 <div><Word>მე</Word> - я</div>
                 <div><Word>შენ</Word> - ты</div>
                 <div><Word>ის/ეს</Word> - он / она / оно</div>
-            </Examples>
-            <Examples>
+            </div>
+            <div>
                 <div><Word>ჩვენ</Word> - мы</div>
                 <div><Word>თქვენ</Word> - вы</div>
                 <div><Word>ისინი</Word> - они</div>
-            </Examples>
-        </Rule>
+            </div>
+        </Examples>
 
         <h3>Указательные</h3>
 
-        <Rule className="gap-x-24">
-            <Examples>
+        <Examples className="flex-col sm:flex-row gap-x-24">
+            <div>
                 <div><Word>ჩემი</Word> - мой</div>
                 <div><Word>შენი</Word> - твой</div>
                 <div><Word>მისი</Word> - его</div>
-            </Examples>
-            <Examples>
+            </div>
+            <div>
                 <div><Word>ჩვენი</Word> - наш</div>
                 <div><Word>თქვენი</Word> - ваш</div>
                 <div><Word>მათი</Word> - их</div>
-            </Examples>
-        </Rule>
+            </div>
+        </Examples>
     </>;
 }

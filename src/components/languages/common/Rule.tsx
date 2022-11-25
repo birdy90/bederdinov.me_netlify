@@ -10,12 +10,12 @@ export const Rule = (props: PropsWithChildren<{ className?: string }>) => {
         props.className,
     ].filter(Boolean).join(' ');
 
-    return <div
+    return <p
         className={classes}
         style={{ wordSpacing: '4px' }}
     >
         {props.children}
-    </div>
+    </p>
 }
 
-Rule.Root = RuleRoot;
+Rule.Text = RuleRoot;

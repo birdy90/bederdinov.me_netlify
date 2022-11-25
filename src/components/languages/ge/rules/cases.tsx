@@ -1,6 +1,5 @@
 import { LettersBlock } from "../../common/LettersBlock";
 import { Word } from "../../common/Word";
-import { Arrow } from "../../common/Arrow";
 import { Plus } from "../../common/Plus";
 import { Rule } from "../../common/Rule";
 import { Examples } from "../../common/Examples";
@@ -34,32 +33,30 @@ export const NounCasesRules = () => <>
 
     <h3>Родительный</h3>
 
-    <Rule className="mb-2">
-        <Rule.Root>окончание на</Rule.Root>
+    <Rule>
+        <Rule.Text>окончание на</Rule.Text>
         <LettersBlock letters="აე" struckThroughLetters="აე"/>
         <Plus/>
         <div>
             <Word>ის</Word>
         </div>
-        <Arrow adaptive/>
-        <Examples>
-            <Word>ძმის</Word>
-            <Word>თვის</Word>
-        </Examples>
     </Rule>
+    <Examples>
+        <Word>ძმის</Word>
+        <Word>თვის</Word>
+    </Examples>
 
     <Rule>
-        <Rule.Root>окончание на</Rule.Root>
+        <Rule.Text>окончание на</Rule.Text>
         <LettersBlock letters="იოუ"/>
         <Plus/>
         <div>
             <Word>ს</Word>
         </div>
-        <Arrow adaptive/>
-        <Examples>
-            <Word>სახლის</Word>
-            <Word>სოკოს</Word>
-            <Word>კუს</Word>
-        </Examples>
     </Rule>
+    <Examples>
+        <Word>სახლის</Word>
+        <Word>სოკოს</Word>
+        <Word>კუს</Word>
+    </Examples>
 </>;
